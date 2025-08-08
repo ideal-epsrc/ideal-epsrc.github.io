@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | IDEAL Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 3px solid #4a5568;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">IDEAL Project</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#vision" class="text-gray-600 hover:text-gray-800">Our Vision</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
+                <a href="publications.html" class="text-gray-600 hover:text-gray-800">Publications</a>
+                <a href="posts.html" class="text-gray-600 hover:text-gray-800 font-bold">Posts</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#vision" class="block py-2 text-gray-600 hover:text-gray-800">Our Vision</a>
+            <a href="team.html" class="block py-2 text-gray-600 hover:text-gray-800">Our Team</a>
+            <a href="publications.html" class="block py-2 text-gray-600 hover:text-gray-800">Publications</a>
+            <a href="posts.html" class="block py-2 text-gray-600 hover:text-gray-800 font-bold">Posts</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-20 flex-grow">
+        <h1 class="text-4xl font-bold text-center mb-12 section-title">News & Posts</h1>
+        
+        <div class="max-w-4xl mx-auto">
+            <!-- Post Card -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <img src="https://placehold.co/800x400/a0aec0/ffffff?text=Wivenhoe+House+Hotel" alt="Wivenhoe House Hotel" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <p class="text-sm text-gray-500 mb-2">Posted on August 10, 2025</p>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">IDEAL Project Kick-Off Meeting at Essex</h2>
+                    <p class="text-gray-700 mb-6">
+                        We are excited to announce our first physical meeting for the IDEAL project! The team will gather at the University of Essex for two days of collaboration, planning, and discussion to officially launch our research endeavours.
+                    </p>
+                    
+                    <div class="border-t border-gray-200 pt-6">
+                        <h3 class="text-2xl font-semibold mb-4">Event Details</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-blue-500 w-6 text-center"></i>
+                                <span class="ml-4 text-gray-700"><strong>Dates:</strong> October 10th & 11th of September, 2025</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-blue-500 w-6 text-center mt-1"></i>
+                                <div class="ml-4 text-gray-700">
+                                    <p><strong>Kick-off Dinner:</strong> Evening of September 10th</p>
+                                    <p><strong>Full-Day Event:</strong> All day on September 11th</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-500 w-6 text-center mt-1"></i>
+                                <div class="ml-4 text-gray-700">
+                                    <p><strong>Venue:</strong> Wivenhoe House Hotel</p>
+                                    <p class="text-sm">University of Essex, Colchester Campus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 IDEAL Project. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">A collaborative research initiative by the University of Essex, University of Glasgow, and University of Oxford.</p>
+            <div class="mt-6">
+                <p class="text-sm text-gray-400 mb-2">Funded by:</p>
+                <img src="https://ideal-epsrc.github.io/images/ukri-logo2.png" alt="UK Research and Innovation" class="h-12 mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/200x50/ffffff/000000?text=UKRI+Logo';">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
