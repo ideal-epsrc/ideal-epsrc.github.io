@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | IDEAL Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 3px solid #4a5568;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .team-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .team-card-content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">IDEAL Project</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#vision" class="text-gray-600 hover:text-gray-800">Our Vision</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800 font-bold">Our Team</a>
+                <a href="publications.html" class="text-gray-600 hover:text-gray-800">Publications</a>
+                <a href="posts.html" class="text-gray-600 hover:text-gray-800">Posts</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#vision" class="block py-2 text-gray-600 hover:text-gray-800">Our Vision</a>
+            <a href="team.html" class="block py-2 text-gray-600 hover:text-gray-800 font-bold">Our Team</a>
+            <a href="publications.html" class="block py-2 text-gray-600 hover:text-gray-800">Publications</a>
+            <a href="posts.html" class="block py-2 text-gray-600 hover:text-gray-800">Posts</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-4xl font-bold text-center mb-12 section-title">Our Multidisciplinary Team</h1>
+        <p class="text-center max-w-3xl mx-auto mb-20">The IDEAL project is powered by a diverse team of leading academics and researchers from three world-class institutions. Our collective expertise spans the critical domains necessary to revolutionize the lifespan of IoT devices.</p>
+
+        <!-- University of Essex Section -->
+        <section id="essex" class="mb-20">
+            <div class="flex items-center justify-center mb-12">
+                <img src="https://placehold.co/150x60/ffffff/000000?text=Essex+Logo" alt="University of Essex Logo" class="h-16 mr-6">
+                <h2 class="text-3xl font-bold">University of Essex</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Klaus McDonald-Maier -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Prof. Klaus McDonald-Maier" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Prof. Klaus McDonald-Maier</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Principal Investigator</p>
+                        <p class="text-gray-700">Expert in electronic hardware design, diagnostics, and self-healing hardware. Leads the project with a focus on building resilient embedded systems.</p>
+                    </div>
+                </div>
+                <!-- Katy Wheeler -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Dr. Katy Wheeler" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Dr. Katy Wheeler</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Project Co-Lead</p>
+                        <p class="text-gray-700">Specialist in circular economies and sustainability. Explores the social and cultural factors for adopting long-lived technology.</p>
+                    </div>
+                </div>
+                <!-- Xiaojun Zhai -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Dr. Xiaojun Zhai" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Dr. Xiaojun Zhai</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Project Co-Lead</p>
+                        <p class="text-gray-700">Focuses on designing intelligent and adaptive computing systems to increase energy efficiency and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- University of Glasgow Section -->
+        <section id="glasgow" class="mb-20">
+            <div class="flex items-center justify-center mb-12">
+                <img src="https://placehold.co/150x60/ffffff/000000?text=Glasgow+Logo" alt="University of Glasgow Logo" class="h-16 mr-6">
+                <h2 class="text-3xl font-bold">University of Glasgow</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 justify-center">
+                <!-- Wim Vanderbauwhede -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Prof. Wim Vanderbauwhede" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Prof. Wim Vanderbauwhede</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Project Co-Lead</p>
+                        <p class="text-gray-700">A leader in Sustainable ICT and energy-efficient computing. Provides expertise in operating systems and compilers to make computing greener.</p>
+                    </div>
+                </div>
+                <!-- Jose Cano Reyes -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Dr. Jose Cano Reyes" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Dr. Jose Cano Reyes</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Project Co-Lead</p>
+                        <p class="text-gray-700">Researcher in hardware/software co-design for energy-efficient AI. Contributes expertise in deploying resilient ML on IoT devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- University of Oxford Section -->
+        <section id="oxford">
+            <div class="flex items-center justify-center mb-12">
+                <img src="https://placehold.co/150x60/ffffff/000000?text=Oxford+Logo" alt="University of Oxford Logo" class="h-16 mr-6">
+                <h2 class="text-3xl font-bold">University of Oxford</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 justify-center">
+                <!-- Nobuko Yoshida -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Prof. Nobuko Yoshida" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Prof. Nobuko Yoshida</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Project Co-Lead</p>
+                        <p class="text-gray-700">Expert in formal methods and verification of distributed systems. Ensures the correctness and security of the IDEAL communication protocols.</p>
+                    </div>
+                </div>
+                <!-- Caitlin McElroy -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center team-card">
+                    <img src="https://placehold.co/150x150/e2e8f0/4a5568?text=Photo" alt="Photo of Dr. Caitlin McElroy" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <div class="team-card-content">
+                        <h3 class="text-xl font-bold mb-1">Dr. Caitlin McElroy</h3>
+                        <p class="font-semibold text-blue-600 mb-3">Project Co-Lead</p>
+                        <p class="text-gray-700">Expert in business models for Sustainable ICT and the Circular Economy. Develops viable business strategies for longer device lifespans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 IDEAL Project. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">A collaborative research initiative by the University of Essex, University of Glasgow, and University of Oxford.</p>
+            <div class="mt-6">
+                <p class="text-sm text-gray-400 mb-2">Funded by:</p>
+                <img src="https://www.ukri.org/wp-content/uploads/2021/07/UKRI-Logo-Horiz-Blue-AW.png" alt="UK Research and Innovation" class="h-12 mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/200x50/ffffff/000000?text=UKRI+Logo';">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
