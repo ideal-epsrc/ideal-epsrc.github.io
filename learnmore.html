@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | IDEAL Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            border-bottom: 3px solid #4a5568;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">IDEAL Project</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#vision" class="text-gray-600 hover:text-gray-800">Our Vision</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
+                <a href="project-details.html" class="text-gray-600 hover:text-gray-800 font-bold">Project Details</a>
+                <a href="publications.html" class="text-gray-600 hover:text-gray-800">Publications</a>
+                <a href="posts.html" class="text-gray-600 hover:text-gray-800">Posts</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="index.html#vision" class="block py-2 text-gray-600 hover:text-gray-800">Our Vision</a>
+            <a href="team.html" class="block py-2 text-gray-600 hover:text-gray-800">Our Team</a>
+            <a href="project-details.html" class="block py-2 text-gray-600 hover:text-gray-800 font-bold">Project Details</a>
+            <a href="publications.html" class="block py-2 text-gray-600 hover:text-gray-800">Publications</a>
+            <a href="posts.html" class="block py-2 text-gray-600 hover:text-gray-800">Posts</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-20 flex-grow">
+        <h1 class="text-4xl font-bold text-center mb-16 section-title">Project Details</h1>
+
+        <!-- Key Points Section -->
+        <section id="key-points" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Key Challenges & Goals</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-red-500 mb-4"><i class="fas fa-industry"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">High Carbon Footprint</h3>
+                    <p>The manufacturing of IoT devices is a major source of carbon emissions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-red-500 mb-4"><i class="fas fa-sync-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Short Replacement Cycles</h3>
+                    <p>Frequent device replacement significantly increases e-waste and emissions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-green-500 mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Massive IoT Growth</h3>
+                    <p>The rapidly expanding IoT market amplifies the environmental impact.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-4xl text-green-500 mb-4"><i class="fas fa-recycle"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Our Goal: Extend Lifespan</h3>
+                    <p>By extending the useful life of devices, we aim to reduce waste and emissions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overall Infrastructure Section -->
+        <section id="infrastructure" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Overall IDEAL Infrastructure</h2>
+            <div class="bg-white p-8 rounded-lg shadow-xl">
+                <p class="text-center text-lg mb-6">The IDEAL project introduces a comprehensive infrastructure for monitoring, diagnosing, and adapting IoT devices to prolong their life. This flowchart illustrates the communication and data flow from the IoT device to the fog and cloud layers.</p>
+                <img src="https://ideal-epsrc.github.io/images/IDEAL_OVERVIEW.png" alt="IDEAL Project Flowchart" class="mx-auto rounded-md">
+            </div>
+        </section>
+
+        <!-- Impact and Future Direction Section -->
+        <section id="future-direction">
+            <h2 class="text-3xl font-bold text-center mb-10">Impact and Future Direction</h2>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Pioneering a Circular Economy</h3>
+                        <p class="mb-4">IDEAL is designed to demonstrate the viability of new business models based on long-lived devices. This shifts the focus from a linear "produce-and-dispose" model to a circular one where devices are maintained, repurposed, and valued for their longevity.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Development of new service-based business models.</li>
+                            <li>Focus on repurposing and self-healing capabilities.</li>
+                            <li>Consideration of social factors influencing adoption.</li>
+                        </ul>
+                    </div>
+                    <div class="text-5xl text-center text-blue-500">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 IDEAL Project. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">A collaborative research initiative by the University of Essex, University of Glasgow, and University of Oxford.</p>
+            <div class="mt-6">
+                <p class="text-sm text-gray-400 mb-2">Funded by:</p>
+                <img src="https://ideal-epsrc.github.io/images/ukri-logo2.png" alt="UK Research and Innovation" class="h-12 mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/200x50/ffffff/000000?text=UKRI+Logo';">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
